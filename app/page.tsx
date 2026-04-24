@@ -188,69 +188,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Blog Section */}
+      {/* Blog Section - Articles from Supabase API */}
       <section className="section section-white">
         <div className="container">
           <h2 className="section-title">Nos Derniers Articles</h2>
           <p className="section-subtitle">
-            Guides pratiques, bons plans et découvertes écrites par nos soins 
-            pour vous aider à planifier votre séjour.
+            Guides pratiques, bons plans et découvertes pour vous aider à planifier votre séjour.
           </p>
-          <div className="grid grid-3">
-            <article className="blog-card">
-              <Image
-                src="/images/aubergegilloise28-com-home-destinations-chateau-anet.jpeg"
-                alt="Château d'Anet"
-                width={400}
-                height={200}
-                className="blog-card-image"
-              />
-              <div className="blog-card-content">
-                <span className="blog-card-category">Patrimoine</span>
-                <h3 className="blog-card-title">
-                  <Link href="/blog">Le Château d&apos;Anet : Joyau de la Renaissance</Link>
-                </h3>
-                <p className="blog-card-excerpt">
-                  Redécouverte de ce château méconnu, ancien séjour de Diane de Poitiers.
-                </p>
-              </div>
-            </article>
-            <article className="blog-card">
-              <Image
-                src="/images/aubergegilloise28-com-restaurants-hero-bistrot-chartres.jpeg"
-                alt="Bistrot de Chartres"
-                width={400}
-                height={200}
-                className="blog-card-image"
-              />
-              <div className="blog-card-content">
-                <span className="blog-card-category">Gastronomie</span>
-                <h3 className="blog-card-title">
-                  <Link href="/blog">5 Bons Adresses pour Manger à Chartres</Link>
-                </h3>
-                <p className="blog-card-excerpt">
-                  Notre sélection de bistros et restaurants où savourer la cuisine locale.
-                </p>
-              </div>
-            </article>
-            <article className="blog-card">
-              <Image
-                src="/images/aubergegilloise28-com-home-activites-foret-rambouillet.jpeg"
-                alt="Randonnées en forêt de Rambouillet"
-                width={400}
-                height={200}
-                className="blog-card-image"
-              />
-              <div className="blog-card-content">
-                <span className="blog-card-category">Nature</span>
-                <h3 className="blog-card-title">
-                  <Link href="/blog">Top 10 des Randonnées autour de Rambouillet</Link>
-                </h3>
-                <p className="blog-card-excerpt">
-                  Les meilleurs sentiers pour découvrir notre belle forêt de Rambouillet.
-                </p>
-              </div>
-            </article>
+          <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem' }}>
+              Aucun article pour le moment.
+            </p>
           </div>
           <div style={{ textAlign: 'center', marginTop: '2rem' }}>
             <Link href="/blog" className="btn btn-primary">

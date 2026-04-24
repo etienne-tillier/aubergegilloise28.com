@@ -27,7 +27,7 @@ export default function BlogPage() {
         <div className="container">
           <div style={{ textAlign: 'center', padding: '4rem 2rem' }}>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem' }}>
-              Nos articles sont en cours de chargement...
+              Aucun article pour le moment.
             </p>
           </div>
         </div>
