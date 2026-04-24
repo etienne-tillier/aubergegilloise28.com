@@ -33,33 +33,6 @@ export default function BlogPage() {
         </div>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="section section-alt">
-        <div className="container" style={{ textAlign: 'center', maxWidth: '600px' }}>
-          <h2 style={{ marginBottom: '1rem' }}>Restez Informé</h2>
-          <p style={{ marginBottom: '2rem', color: 'var(--color-text-secondary)' }}>
-            Recevez nos derniers guides, bonnes adresses et bons plans directement dans votre boîte mail.
-          </p>
-          <form style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <input
-              type="email"
-              placeholder="Votre adresse email"
-              required
-              style={{
-                flex: '1 1 250px',
-                padding: '0.75rem 1rem',
-                border: '2px solid var(--color-border)',
-                borderRadius: 'var(--radius-md)',
-                fontSize: '1rem',
-                fontFamily: 'var(--font-body)',
-              }}
-            />
-            <button type="submit" className="btn btn-primary">
-              S&apos;inscrire
-            </button>
-          </form>
-        </div>
-      </section>
     </>
   );
 }

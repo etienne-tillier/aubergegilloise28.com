@@ -1,64 +1,77 @@
 import { MetadataRoute } from 'next';
 
+const BASE_URL = 'https://aubergegilloise28.com';
+const DEFAULT_LOCALE = 'fr-FR';
+
+// Static pages with hreflang for multilingual SEO
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://aubergegilloise28.com';
+  const now = new Date();
   
-  const staticPages: MetadataRoute.Sitemap = [
+  const staticPages = [
     {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: BASE_URL,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
       priority: 1,
     },
     {
-      url: `${baseUrl}/hebergements`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${BASE_URL}/hebergements`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/restaurants`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${BASE_URL}/restaurants`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/que-faire`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${BASE_URL}/que-faire`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/guides`,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      url: `${BASE_URL}/guides`,
+      lastModified: now,
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog`,
-      lastModified: new Date(),
-      changeFrequency: 'daily',
+      url: `${BASE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: 'daily' as const,
       priority: 0.7,
     },
     {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${BASE_URL}/contact`,
+      lastModified: now,
+      changeFrequency: 'monthly' as const,
       priority: 0.5,
     },
     {
-      url: `${baseUrl}/mentions-legales`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${BASE_URL}/mentions-legales`,
+      lastModified: now,
+      changeFrequency: 'yearly' as const,
       priority: 0.3,
     },
     {
-      url: `${baseUrl}/politique-confidentialite`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: `${BASE_URL}/politique-confidentialite`,
+      lastModified: now,
+      changeFrequency: 'yearly' as const,
       priority: 0.3,
     },
   ];
 
-  return staticPages;
+  // Add x-default and fr-FR hreflang alternates
+  return staticPages.map((page) => ({
+    ...page,
+    alternates: {
+      languages: {
+        'x-default': page.url,
+        [DEFAULT_LOCALE]: page.url,
+      },
+    },
+  }));
 }
