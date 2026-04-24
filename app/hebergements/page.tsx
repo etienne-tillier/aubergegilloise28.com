@@ -51,7 +51,7 @@ export default function HebergementsPage() {
                   Une auberge traditionnelle aux murs de pierre apparente, 
                   offrant une cuisine du terroir et des chambres de caractère.
                 </p>
-                <Link href="/hebergements/auberge-pierre" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -71,7 +71,7 @@ export default function HebergementsPage() {
                   Ancien manoir du XIXe siècle, niché dans un parc de 3 hectares. 
                   Charme et raffinement pour un séjour d&apos;exception.
                 </p>
-                <Link href="/hebergements/manoir-perche" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -91,7 +91,7 @@ export default function HebergementsPage() {
                   À quelques pas du Château d&apos;Anet, quatre chambres élégantes 
                   dans un корпус de зависимости restauré avec goût.
                 </p>
-                <Link href="/hebergements/chambres-chateau-anet" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default function HebergementsPage() {
                   Authentique ferme beauceronne convertie en chambre d&apos;hôte. 
                   Petit-déjeuner fermier et accueil chaleureux garanti.
                 </p>
-                <Link href="/hebergements/ferme-beauce" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -131,7 +131,7 @@ export default function HebergementsPage() {
                   Niché aux abords de la forêt de Rambouillet, ce gîte offre 
                   calme absolu et accès direct aux sentiers forestiers.
                 </p>
-                <Link href="/hebergements/gite-foret" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -151,7 +151,7 @@ export default function HebergementsPage() {
                   Hôtel de standing au cœur d&apos;un village pittoresque. 
                   Restaurant gastronomique et cave à vins remarquable.
                 </p>
-                <Link href="/hebergements/hotel-marche" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/hebergements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>

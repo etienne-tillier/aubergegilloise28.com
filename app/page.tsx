@@ -208,7 +208,7 @@ export default function HomePage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Patrimoine</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/chateau-anet">Le Château d&apos;Anet : Joyau de la Renaissance</Link>
+                  <Link href="/blog">Le Château d&apos;Anet : Joyau de la Renaissance</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Redécouverte de ce château méconnu, ancien séjour de Diane de Poitiers.
@@ -226,7 +226,7 @@ export default function HomePage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Gastronomie</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/bons-adresses-chartres">5 Bons Adresses pour Manger à Chartres</Link>
+                  <Link href="/blog">5 Bons Adresses pour Manger à Chartres</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Notre sélection de bistros et restaurants où savourer la cuisine locale.
@@ -244,7 +244,7 @@ export default function HomePage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Nature</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/randonnees-rambouillet">Top 10 des Randonnées autour de Rambouillet</Link>
+                  <Link href="/blog">Top 10 des Randonnées autour de Rambouillet</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Les meilleurs sentiers pour découvrir notre belle forêt de Rambouillet.

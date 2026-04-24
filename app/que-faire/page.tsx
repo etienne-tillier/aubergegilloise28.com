@@ -51,7 +51,7 @@ export default function QueFairePage() {
                   Explorez les châteaux de Maintenon, Anet, Montpipeau 
                   et laissez-vous conter des siècles d&apos;histoire.
                 </p>
-                <Link href="/guides/chateaux" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -71,7 +71,7 @@ export default function QueFairePage() {
                   Des sentiers balisés en forêt de Rambouillet aux vallées 
                   de l&apos;Eure, évadez-vous au vert.
                 </p>
-                <Link href="/guides/randonnees" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -91,7 +91,7 @@ export default function QueFairePage() {
                   La ville de Chartres et ses trésors architecturaux, 
                   ses rues médiévales et sa cathédrale UNESCO.
                 </p>
-                <Link href="/guides/chartres" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default function QueFairePage() {
                   Terroir authentique aux portes du 28, известный для 
                   ses manoirs, ses prairies et son cheval de trait.
                 </p>
-                <Link href="/guides/perche" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -131,7 +131,7 @@ export default function QueFairePage() {
                   Découvrez les marchés hebdomadaires et rencontrez 
                   les producteurs locaux passionnés.
                 </p>
-                <Link href="/guides/marches" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -151,7 +151,7 @@ export default function QueFairePage() {
                   Fêtes villageoises, concerts en plein air, brocantes 
                   et animations tout au long de l&apos;année.
                 </p>
-                <Link href="/guides/evenements" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Découvrir
                 </Link>
               </div>
@@ -168,19 +168,19 @@ export default function QueFairePage() {
             Nos guides approfondis pour planifier votre séjour selon vos envies.
           </p>
           <div className="grid grid-4">
-            <Link href="/guides/weekend-couple" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
+            <Link href="/guides" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
               <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>💑</div>
               <h4 style={{ color: 'var(--color-text)' }}>Week-end en Couple</h4>
             </Link>
-            <Link href="/guides/famille-enfants" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
+            <Link href="/guides" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
               <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>👨‍👩‍👧‍👦</div>
               <h4 style={{ color: 'var(--color-text)' }}>Famille avec Enfants</h4>
             </Link>
-            <Link href="/guides/nature-sportifs" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
+            <Link href="/guides" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
               <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🚴</div>
               <h4 style={{ color: 'var(--color-text)' }}>Sportifs & Randonneurs</h4>
             </Link>
-            <Link href="/guides/culture-patrimoine" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
+            <Link href="/guides" className="card" style={{ textAlign: 'center', padding: '2rem', textDecoration: 'none' }}>
               <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>🏛️</div>
               <h4 style={{ color: 'var(--color-text)' }}>Culture & Histoire</h4>
             </Link>

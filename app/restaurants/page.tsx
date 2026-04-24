@@ -51,7 +51,7 @@ export default function RestaurantsPage() {
                   Cuisine traditionnelle française avec produits de la ferme. 
                   Terrasse ombragée au bord de l&apos;Eure.
                 </p>
-                <Link href="/restaurants/bistrot-eure" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/restaurants" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -71,7 +71,7 @@ export default function RestaurantsPage() {
                   Gastronomie fine avec vue sur la cathédrale. 
                   Menu saisonnier basé sur les produits du marché.
                 </p>
-                <Link href="/restaurants/table-chartres" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/restaurants" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -91,7 +91,7 @@ export default function RestaurantsPage() {
                   Ancienne auberge de bord de route, spécialisée dans 
                   les viandes grillées et les fromages locaux.
                 </p>
-                <Link href="/restaurants/auberge-pont-neuf" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/restaurants" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>
@@ -111,7 +111,7 @@ export default function RestaurantsPage() {
                   Brasserie de village conviviale. Cuisine maison, 
                   меню du jour à prix doux, terrace animée.
                 </p>
-                <Link href="/restaurants/cafe-place" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/restaurants" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   En savoir plus
                 </Link>
               </div>

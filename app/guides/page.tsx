@@ -52,7 +52,7 @@ export default function GuidesPage() {
                   Château de Maintenon, Anet, Montpipeau... 
                   Tous les atouts du patrimoine nobiliaire du 28.
                 </p>
-                <Link href="/guides/chateaux" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -73,7 +73,7 @@ export default function GuidesPage() {
                   Fromages de Beauce, volailles de Bresse, miel de Rambouillet : 
                   découvez les produits d&apos;exception du 28.
                 </p>
-                <Link href="/guides/gastronomie" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -94,7 +94,7 @@ export default function GuidesPage() {
                   15 sentiers détaillés, de la forêt de Rambouillet aux 
                   rives de l&apos;Eure. Tous les niveaux welcome.
                 </p>
-                <Link href="/guides/randonnees" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -115,7 +115,7 @@ export default function GuidesPage() {
                   Itinéraire complet pour découvrir la ville, 
                   sa cathédrale et ses petites rues médiévales.
                 </p>
-                <Link href="/guides/chartres" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -136,7 +136,7 @@ export default function GuidesPage() {
                   Notre sélection des meilleurs hébergements de caractère 
                   pour un séjour réussi dans le 28.
                 </p>
-                <Link href="/guides/top-auberges" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -157,7 +157,7 @@ export default function GuidesPage() {
                   Circuit de 80 km à travers le Perche, 
                   entre bocage, manoirs et prairie verdoyantes.
                 </p>
-                <Link href="/guides/perche-velo" className="btn btn-outline" style={{ marginTop: '1rem' }}>
+                <Link href="/guides" className="btn btn-outline" style={{ marginTop: '1rem' }}>
                   Lire le guide
                 </Link>
               </div>
@@ -177,7 +177,7 @@ export default function GuidesPage() {
                 Itinéraires détaillés, meilleures adresses, conseils pratiques 
                 et erreurs à éviter.
               </p>
-              <Link href="/guides/que-faire-chartres" className="btn btn-secondary">
+              <Link href="/guides" className="btn btn-secondary">
                 Télécharger le guide gratuit
               </Link>
             </div>

@@ -41,7 +41,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Patrimoine</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/chateau-anet">Le Château d&apos;Anet : Joyau méconnu de la Renaissance</Link>
+                  <Link href="/blog">Le Château d&apos;Anet : Joyau méconnu de la Renaissance</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Redécouverte de ce château attachant à l&apos;histoire fascinante, 
@@ -61,7 +61,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Gastronomie</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/bons-adresses-chartres">5 Restaurants Incontournables à Chartres</Link>
+                  <Link href="/blog">5 Restaurants Incontournables à Chartres</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Notre sélection de bonnes tables où manger local, 
@@ -81,7 +81,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Nature</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/randonnees-rambouillet">Top 10 des Randonnées autour de Rambouillet</Link>
+                  <Link href="/blog">Top 10 des Randonnées autour de Rambouillet</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Les meilleurs sentiers pour profiter de la forêt, 
@@ -101,7 +101,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Hébergement</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/chambres-hotes-perche">5 Chambres d&apos;Hôtes Remarquables dans le Perche</Link>
+                  <Link href="/blog">5 Chambres d&apos;Hôtes Remarquables dans le Perche</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Notre sélection de hébergements de caractère pour 
@@ -121,7 +121,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Gastronomie</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/produits-locaux">Les Produits Locaux à ne Pas Manquer</Link>
+                  <Link href="/blog">Les Produits Locaux à ne Pas Manquer</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Fromages, miel, volailles, pommes : notre guide des produits 
@@ -141,7 +141,7 @@ export default function BlogPage() {
               <div className="blog-card-content">
                 <span className="blog-card-category">Conseils</span>
                 <h3 className="blog-card-title">
-                  <Link href="/blog/preparer-sejour">Préparer son Séjour dans l&apos;Eure-et-Loir</Link>
+                  <Link href="/blog">Préparer son Séjour dans l&apos;Eure-et-Loir</Link>
                 </h3>
                 <p className="blog-card-excerpt">
                   Quand partir, comment s&apos;y rendre, où loger : tous nos conseils 
