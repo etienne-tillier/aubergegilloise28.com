@@ -106,8 +106,9 @@ export default function RootLayout({
               <div>
                 <div className="footer-title">Contact</div>
                 <div className="footer-links">
-                  <span className="footer-link">{siteConfig.legal.contact}</span>
-                  <span className="footer-link">{siteConfig.legal.host}</span>
+                  <a href={`mailto:${siteConfig.legal.contact}`} className="footer-link">
+                    {siteConfig.legal.contact}
+                  </a>
                 </div>
               </div>
             </div>

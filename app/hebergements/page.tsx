@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Hébergements de Charme - AubergeGilloise28',
+  description: 'Découvrez notre sélection d&apos;hébergements de charme dans l&apos;Eure-et-Loir : auberges traditionnelles, manoirs élégants, chambres d&apos;hôtes accueillantes pour un séjour authentique.',
+};
+
 export default function HebergementsPage() {
   return (
     <>
@@ -15,22 +20,50 @@ export default function HebergementsPage() {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* SEO Content Section */}
       <section className="section section-white">
         <div className="container">
-          {/* Hero Image for Hebergements */}
-          <div style={{ position: 'relative', width: '100%', height: '400px', marginBottom: '3rem', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-            <Image
-              src="/images/aubergegilloise28-com-hebergements-hero-manoir-perche.jpeg"
-              alt="Manoir du Perche - Hébergement de prestige en Eure-et-Loir"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(44,36,22,0.6), transparent)' }} />
+          <h2 className="section-title">Trouvez votre Hébergement Ideal dans l&apos;Eure-et-Loir</h2>
+          
+          <div style={{ maxWidth: '800px', margin: '0 auto 2rem', lineHeight: 1.8, color: 'var(--color-text-secondary)' }}>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Le département de l&apos;Eure-et-Loir offre une diversité d&apos;hébergements remarquable, adaptés à tous les 
+              budgets et toutes les envies. Des auberges de village aux châteaux privés transformés en hotels de 
+              charme, chaque établissement de notre sélection a été visitée et approuvé par notre équipe.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Auberges Traditionnelles : Authentícité et Convivialité
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Les auberges traditionnelles de l&apos;Eure-et-Loir perpétuent l&apos;art de recevoir à la française. Murs de pierre 
+              apparente, poutres séculaires,cheminées à foyer ouvert : ces hébergements de caractère vous plongent 
+              dans l&apos;ambiance chaleureuse de nos campagnes. La plupart propose également une restauration soignée, 
+              idéal pour les séjours gastronomiques au cœur du 28.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Manoirs et Châteaux : Séjour d&apos;Exception
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Pour un séjour d&apos;exception, les manoirs et châteaux de l&apos;Eure-et-Loir vous accueillent dans un cadre 
+              préservé. Le Perche, avec ses demeures en pierre grise du XIXe siècle, constitue un choix privilégié 
+              pour les couples en quête de romance. Les domaines de Maintenon et Anet offrent des expériences uniques, 
+              entre histoire et raffinement contemporain.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Chambres d&apos;Hôtes : Accueil Chaleureux et Local
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Les chambres d&apos;hôtes de l&apos;Eure-et-Loir vous font partager le quotidien de nos-hotes locaux. Petits-déjeuners 
+              faits maison à base de produits de la ferme, conseils avisés pour découvrir les richesses cachées du 28, 
+              et cette atmosphère familiale qui fait toute la différence. Une option idéale pour les voyageurs en quête 
+              d&apos;authenticité et de contacts humains.
+            </p>
           </div>
 
-          <h2 className="section-title">Notre Sélection</h2>
+          <h2 className="section-title" style={{ marginTop: '3rem' }}>Notre Sélection</h2>
           <p className="section-subtitle">
             Chaque hébergement a été visitée et approuvé par notre équipe pour garantir 
             qualité d&apos;accueil et authenticité.

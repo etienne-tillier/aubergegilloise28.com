@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Restaurants & Gastronomie - AubergeGilloise28',
+  description: 'Découvrez les meilleurs restaurants et la gastronomie locale de l&apos;Eure-et-Loir : cuisine traditionnelle, produits du terroir, specialités régionales.',
+};
+
 export default function RestaurantsPage() {
   return (
     <>
@@ -15,22 +20,51 @@ export default function RestaurantsPage() {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* SEO Content Section */}
       <section className="section section-white">
         <div className="container">
-          {/* Hero Image for Restaurants */}
-          <div style={{ position: 'relative', width: '100%', height: '400px', marginBottom: '3rem', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-            <Image
-              src="/images/aubergegilloise28-com-restaurants-hero-bistrot-chartres.jpeg"
-              alt="Bistrot traditionnel de Chartres - Cuisine du terroir"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(44,36,22,0.6), transparent)' }} />
+          <h2 className="section-title">Saveurs et Gastronomie du Terroir Euréloirien</h2>
+          
+          <div style={{ maxWidth: '800px', margin: '0 auto 2rem', lineHeight: 1.8, color: 'var(--color-text-secondary)' }}>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              La gastronomie de l&apos;Eure-et-Loir celebrated les produits d&apos;exception de notre belle région. Des 
+              fromages frais de la Beauce aux volailles de Bresse renommées, en passant par le miel floral de 
+              la forêt de Rambouillet et les pommes anciennes du Perche, notre terroir offre une palette de 
+              saveurs authentique à découvrir sans modération.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Restaurants de Charme : Cuisine Traditionnelle Revisitee
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Les restaurants que nous recommandons dans l&apos;Eure-et-Loir车速 une cuisine authentique basée sur les 
+              produits locaux et de saison. Les chefs locaux s&apos;approvisionnent directement auprès des producteurs 
+              du 28, garantissant fraîcheur et traçabilité. Terrasses ombragées au bord de l&apos;Eure, salles 
+              chaleureuses aux poutres apparentes : chaque établissement offre un cadre à la hauteur de sa cuisine.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Tables Gastronomiques : Création et Excellence
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Pour les occasions spéciales, les tables gastronomiques de l&apos;Eure-et-Loir surprenent par leur créativité 
+              et leur excellence. Menus saisonniers imaginés au fil des récoltes, accords mets-vins avec les crus 
+              locaux, services irréprochables : ces restaurants récompensent les amateurs de haute cuisine française 
+              souhaitant explorer une destination gourmande.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Bistrots de Village : Convivialité et Prix Doux
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Les bistrots de village constituent le cœur de la vie sociale euréloirienne. Cuisine maison, меню du 
+              jour à prix démocratique, terrasse animée les jours de marché : ces establishments conviviaux révèlent 
+              l&apos;art de vivre de notre région. L&apos;idéal pour une pause déjeuner réussie ou un dîner décontracté entre 
+              amis ou en famille.
+            </p>
           </div>
 
-          <h2 className="section-title">Nos Adresses Gourmandes</h2>
+          <h2 className="section-title" style={{ marginTop: '3rem' }}>Nos Adresses Gourmandes</h2>
           <p className="section-subtitle">
             Une sélection pointue de restaurants où la cuisine du terroir 
             celebrate les produits locaux de notre belle région.

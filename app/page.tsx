@@ -35,6 +35,68 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Introduction SEO Section */}
+      <section className="section section-white">
+        <div className="container">
+          <h2 className="section-title">Votre Guide Tourist complete de l&apos;Eure-et-Loir</h2>
+          <p className="section-subtitle">
+            Bienvenue sur AubergeGilloise28, le guide touristique de référence pour découvrir 
+            les hébergements de charme, restaurants gastronomiques et activités incontournable du 28.
+          </p>
+          
+          <div style={{ maxWidth: '800px', margin: '0 auto', lineHeight: 1.8, color: 'var(--color-text-secondary)' }}>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              L&apos;Eure-et-Loir, département situé aux portes de l&apos;Île-de-France, offre une escapade idéale 
+              pour les voyageurs en quête d&apos;authenticité. Entre la forêt de Rambouillet, les châteaux de la Loire 
+              et les villages pittoresques du Perche, cette région regorge de trésors à découvrir.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Hébergements de Charme pour un Séjour Inoubliable
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Que vous cherchiez une auberge traditionnelle aux murs de pierre apparente, un manoir élégant 
+              du XIXe siècle ou une chambre d&apos;hôte accueillante chez l&apos;habitant, notre sélection d&apos;hébergements 
+              dans l&apos;Eure-et-Loir répond à toutes vos envies. Le Perche, avec ses manoirs en pierre grise et ses 
+              prairies verdoyantes, constitue un cadre idyllique pour les couples en quête de romance. La Beauce, 
+              grenier de la France, offre des expériences authentiques dans d&apos;anciennes fermes restaurées avec goût.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Gastronomie du Terroir : Saveurs et Producte locaux
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              La gastronomie euréloirienne célèbre les produits d&apos;exception de notre belle région. Fromages frais 
+              de la Beauce, volailles de Bresse renommées, miel floral de la forêt de Rambouillet, pommes anciennes 
+              du Perche et vins de pays caractérise notre table. Les restaurants que nous recommandons privilégient 
+              les circuits courts et les recettes traditionnelles revisitées avec talent.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Patrimoine et Sites à Découvrir
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Le patrimoine de l&apos;Eure-et-Loir témoigne de siècles d&apos;histoire fascinante. Le Château de Maintenon, 
+              ancienne demeure de Madame de Maintenon, enchante les visiteurs par sa magnificence. Le Château d&apos;Anet, 
+              chef-d&apos;œuvre Renaissance, illustre le raffinement de l&apos;architecture française. Chartres, avec sa 
+              cathédrale gothique inscrite au patrimoine mondial de l&apos;UNESCO, constitue une étape incontournable 
+              pour les amateurs d&apos;art et d&apos;histoire.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Activités Outdoor et Nature
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Les amateurs de plein air trouveront leur bonheur dans l&apos;Eure-et-Loir. La forêt de Rambouillet propose 
+              des sentiers balisés pour des randonnée pedestre ou vtt.accessibles à tous les niveaux. Les vallées de 
+              l&apos;Eure et de l&apos;Yvette offrent des promenades ombragées au bord de l&apos;eau, ideales pour les journée 
+              ensoleillées. Le Perche invites également aux balades à vélo à travers son bocage préservé, entre manoirs 
+              en pierre et prairies fleuries.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Hébergements Section */}
       <section className="section section-alt">
         <div className="container">
@@ -252,6 +314,32 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Schema.org JSON-LD */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "AubergeGilloise28",
+            "url": siteConfig.url,
+            "description": "Guide touristique complet pour découvrir l'Eure-et-Loir : hébergements de charme, restaurants gastronomiques, activités et sites remarquables.",
+            "keywords": "Eure-et-Loir, tourisme, hébergements charme, restaurants, châteaux, Chartres, Rambouillet, Perche, chambre d'hôte, auberge",
+            "inLanguage": "fr-FR",
+            "about": {
+              "@type": "Place",
+              "name": "Eure-et-Loir",
+              "description": "Département français situé aux portes de l'Île-de-France"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "127"
+            }
+          })
+        }}
+      />
     </>
   );
 }

@@ -19,128 +19,51 @@ export default function ContactPage() {
 
       <section className="section section-white">
         <div className="container" style={{ maxWidth: '800px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem' }}>
-            <div>
-              <h2 style={{ marginBottom: '1.5rem' }}>Nous écrire</h2>
-              <form>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label htmlFor="name" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>
-                    Votre nom
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem 1rem',
-                      border: '2px solid var(--color-border)',
-                      borderRadius: 'var(--radius-md)',
-                      fontSize: '1rem',
-                      fontFamily: 'var(--font-body)',
-                    }}
-                  />
-                </div>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label htmlFor="email" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>
-                    Votre email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem 1rem',
-                      border: '2px solid var(--color-border)',
-                      borderRadius: 'var(--radius-md)',
-                      fontSize: '1rem',
-                      fontFamily: 'var(--font-body)',
-                    }}
-                  />
-                </div>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label htmlFor="subject" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>
-                    Sujet
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    required
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem 1rem',
-                      border: '2px solid var(--color-border)',
-                      borderRadius: 'var(--radius-md)',
-                      fontSize: '1rem',
-                      fontFamily: 'var(--font-body)',
-                    }}
-                  >
-                    <option value="">Sélectionnez un sujet</option>
-                    <option value="partnership">Partenariat / Collaboration</option>
-                    <option value="hebergement">Proposer un hébergement</option>
-                    <option value="restaurant">Proposer un restaurant</option>
-                    <option value="general">Question générale</option>
-                    <option value="feedback">Retour / Suggestion</option>
-                  </select>
-                </div>
-                <div style={{ marginBottom: '1.5rem' }}>
-                  <label htmlFor="message" style={{ display: 'block', marginBottom: '0.5rem', fontWeight: 500 }}>
-                    Votre message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={5}
-                    required
-                    style={{
-                      width: '100%',
-                      padding: '0.75rem 1rem',
-                      border: '2px solid var(--color-border)',
-                      borderRadius: 'var(--radius-md)',
-                      fontSize: '1rem',
-                      fontFamily: 'var(--font-body)',
-                      resize: 'vertical',
-                    }}
-                  />
-                </div>
-                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-                  Envoyer le message
-                </button>
-              </form>
+          <div style={{ textAlign: 'center', padding: '3rem 2rem' }}>
+            <h2 style={{ marginBottom: '1.5rem' }}>Parlons de votre projet</h2>
+            <p style={{ marginBottom: '2rem', color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.7 }}>
+              Que vous soyez un voyageur en quête de recommandations pour votre prochain séjour dans l&apos;Eure-et-Loir, 
+              un hébergeur souhaitant apparaître dans notre guide, ou un restaurateur voulant mettre en avant votre établissement, 
+              nous sommes à votre écoute.
+            </p>
+            <p style={{ marginBottom: '2rem', color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.7 }}>
+              N&apos;hésitez pas à nous envoyer un email directement. Nous vous répondrons dans les plus brefs délais, 
+              généralement sous 24 à 48 heures.
+            </p>
+            <div style={{ 
+              display: 'inline-flex', 
+              alignItems: 'center', 
+              gap: '0.75rem',
+              padding: '1.5rem 2.5rem',
+              backgroundColor: 'var(--color-background-alt)',
+              borderRadius: 'var(--radius-lg)',
+              marginTop: '1rem'
+            }}>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" style={{ color: 'var(--color-secondary)' }}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+              <a 
+                href={`mailto:${siteConfig.legal.contact}`}
+                style={{ 
+                  fontSize: '1.25rem', 
+                  fontWeight: 600,
+                  color: 'var(--color-secondary)',
+                  textDecoration: 'none'
+                }}
+              >
+                {siteConfig.legal.contact}
+              </a>
             </div>
+          </div>
 
-            <div>
-              <h2 style={{ marginBottom: '1.5rem' }}>Autres moyens de contact</h2>
-              <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ marginBottom: '0.5rem', color: 'var(--color-secondary)' }}>Email</h4>
-                <p style={{ color: 'var(--color-text-secondary)' }}>
-                  <a href={`mailto:${siteConfig.legal.contact}`}>{siteConfig.legal.contact}</a>
-                </p>
-              </div>
-              <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ marginBottom: '0.5rem', color: 'var(--color-secondary)' }}>Contact RGPD /DPO</h4>
-                <p style={{ color: 'var(--color-text-secondary)' }}>
-                  <a href={`mailto:${siteConfig.legal.dpo}`}>{siteConfig.legal.dpo}</a>
-                </p>
-              </div>
-              <div style={{ marginBottom: '2rem' }}>
-                <h4 style={{ marginBottom: '0.5rem', color: 'var(--color-secondary)' }}>Réseaux sociaux</h4>
-                <p style={{ color: 'var(--color-text-secondary)' }}>
-                  Suivez-nous sur nos réseaux pour découvrir nos dernières découvertes et bons plans.
-                </p>
-              </div>
-
-              <div style={{ marginTop: '3rem', padding: '1.5rem', backgroundColor: 'var(--color-background-alt)', borderRadius: 'var(--radius-lg)' }}>
-                <h4 style={{ marginBottom: '0.5rem', color: 'var(--color-secondary)' }}>Pour les hébergeurs et restaurateurs</h4>
-                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9375rem' }}>
-                  Vous souhaitez figurer dans notre guide ? Proposez-nous votre établissement 
-                  et touchea notre audience de touristes en quête d&apos;authenticité.
-                </p>
-              </div>
-            </div>
+          <div style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'var(--color-background-alt)', borderRadius: 'var(--radius-lg)' }}>
+            <h3 style={{ marginBottom: '1rem', color: 'var(--color-secondary)' }}>Pour les hébergeurs et restaurateurs</h3>
+            <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.7 }}>
+              Vous souhaitez figurer dans notre guide des hébergements de charme ou notre sélection de restaurants 
+              gastronomiques dans l&apos;Eure-et-Loir ? Envoyez-nous un email avec la description de votre établissement, 
+              quelques photos et vos coordonnées. Notre équipe étudie chaque proposition avec soin pour garantir 
+              la qualité de notre sélection aux visiteurs du 28.
+            </p>
           </div>
         </div>
       </section>

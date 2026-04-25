@@ -1,6 +1,11 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Nos Guides - AubergeGilloise28',
+  description: 'Guides pratiques, itinéraires détaillés et bons plans pour préparer votre séjour dans l&apos;Eure-et-Loir : châteaux, gastronomie, randonnéées, Chartres.',
+};
+
 export default function GuidesPage() {
   return (
     <>
@@ -15,22 +20,65 @@ export default function GuidesPage() {
         </div>
       </section>
 
-      {/* Main Content */}
+      {/* SEO Content Section */}
       <section className="section section-white">
         <div className="container">
-          {/* Hero Image for Guides */}
-          <div style={{ position: 'relative', width: '100%', height: '400px', marginBottom: '3rem', borderRadius: 'var(--radius-lg)', overflow: 'hidden' }}>
-            <Image
-              src="/images/aubergegilloise28-com-guides-hero-campagne-eure-loir.jpeg"
-              alt="Campagne de l'Eure-et-Loir - Guide touristique"
-              fill
-              style={{ objectFit: 'cover' }}
-              priority
-            />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(44,36,22,0.6), transparent)' }} />
+          <h2 className="section-title">Guides et Conseils pour un Séjour Réussi dans le 28</h2>
+          
+          <div style={{ maxWidth: '800px', margin: '0 auto 2rem', lineHeight: 1.8, color: 'var(--color-text-secondary)' }}>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Notre équipe de passionnés de l&apos;Eure-et-Loir a rédigé des guides approfondis pour vous aider à 
+              planifier votre escapade dans les mejores conditions. Itinéraires détaillés, meilleures adresses, 
+              conseils pratiques et erreurs à éviter : nos guides vous partagent tout ce que nous avons appris 
+              au fil de nos découvertes dans le 28.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Guides des Châteaux de l&apos;Eure-et-Loir
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Le département abrite plusieurs demeures historiques remarquables. Notre guide des châteaux vous 
+              détaille l&apos;histoire, l&apos;architecture et les modalités de visite de chaque propriété. Du Château de 
+              Maintenon avec ses jardins restaurés à la française au Château d&apos;Anet, chef-d&apos;œuvre Renaissance, 
+              en passant par les domaines privée qui accueillent parfois des événements spéciaux, vous disposerez 
+              de toutes les informations pour organiser vos visites.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Guide des Randonnées et Balades
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              La forêt de Rambouillet, les vallées de l&apos;Eure et de l&apos;Yvette, le Perche : notre sélection de 
+              15 sentiers détaillés couvre tous les niveaux et toutes les durations. Chaque fiche rando inclut 
+              le tracé GPS, le dénivelé, les points de vue remarquables et les arrêts obligatoires (buvettes, 
+              tables de pique-nique, sites интересные). De la promenade familial de 3 km à la randonnéé 
+              sportive de 20 km, chaque amateur de nature trouvera son bonheur.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Guide de Chartres en 2 Jours
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Chartres mérite au minimum deux jours de visite pour pleinement apprécier ses trésors. Notre 
+              guide propose un itinéraire jour par jour, heure par heure, avec les meilleures adresses de 
+              restaurants, les rues à ne pas manquer et les spots photos идеально. La cathédrale, le vieux 
+              Chartres, les musées, les jardins : tout est prévu pour une immersion réussie dans cette ville 
+              d&apos;art et d&apos;histoire.
+            </p>
+            
+            <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', marginTop: '2rem' }}>
+              Guide du Perche à Vélo
+            </h3>
+            <p style={{ marginBottom: '1.5rem', fontSize: '1.05rem' }}>
+              Le Perche se prête particulièrement bien aux balades à vélo. Notre circuit de 80 km traverse 
+              les plus beaux villages du territoire, entre manoirs en pierre, churchs romans et prairies 
+              verdoyantes. Nous vous dévoilons les locations de vélos, les haltes incontournbias et les 
+              variantes pour adapter le parcours à vos envies. Une expérience cyclotouristique inoubliable au 
+              cœur d&apos;un terroir authentique.
+            </p>
           </div>
 
-          <h2 className="section-title">Guides par Thématique</h2>
+          <h2 className="section-title" style={{ marginTop: '3rem' }}>Guides par Thématique</h2>
           <p className="section-subtitle">
             Des guides spécialisés pour répondre à toutes vos questions 
             et optimiser votre découverte du 28.
