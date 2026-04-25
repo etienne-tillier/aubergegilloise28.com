@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import Image from "next/image";
 
 import { MarkdownLink } from "@/components/MarkdownLink";
 import { getBlogPostBySlug } from "@/lib/blog";
@@ -60,27 +61,76 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   }
 
   return (
-    <main className="mx-auto max-w-3xl px-6 py-12">
-      <Link href="/blog" className="text-sm text-slate-600 hover:underline">
-        Retour au blog
-      </Link>
-
-      <article className="mt-6">
-        <h1 className="text-3xl font-semibold tracking-tight text-slate-900">
-          {post.h1 || post.seo_title || post.slug}
-        </h1>
-        <p className="mt-2 text-sm text-slate-500">
-          {post.published_at
-            ? new Date(post.published_at).toLocaleDateString("fr-FR")
-            : "Date inconnue"}
-        </p>
-
-        <div className="prose prose-slate mt-8 max-w-none">
-          <ReactMarkdown remarkPlugins={[remarkGfm]} components={{ a: MarkdownLink }}>
-            {post.body_md || post.excerpt || ""}
-          </ReactMarkdown>
+    <>
+      {/* Hero Section */}
+      <section className="page-header">
+        <div className="container">
+          <Link href="/blog" className="back-link">
+            ← Retour au blog
+          </Link>
         </div>
-      </article>
-    </main>
+      </section>
+
+      {/* Article Content */}
+      <section className="section section-white">
+        <div className="container" style={{ maxWidth: '800px' }}>
+          {/* Cover Image */}
+          {post.cover?.file_url && (
+            <div className="article-cover">
+              <Image
+                src={post.cover.file_url}
+                alt={post.cover.alt || post.h1 || post.slug}
+                width={800}
+                height={400}
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: 'var(--radius-lg)' }}
+              />
+            </div>
+          )}
+
+          {/* Article Header */}
+          <header className="article-header">
+            {post.categories && post.categories.length > 0 && (
+              <div className="article-categories">
+                {post.categories.map((cat, index) => (
+                  <span key={index} className="blog-card-category">{cat.label}</span>
+                ))}
+              </div>
+            )}
+            <h1 className="article-title">{post.h1 || post.seo_title || post.slug}</h1>
+            {post.excerpt && (
+              <p className="article-excerpt">{post.excerpt}</p>
+            )}
+            <div className="article-meta">
+              {post.author?.name && (
+                <span className="article-author">Par {post.author.name}</span>
+              )}
+              {post.published_at && (
+                <span className="article-date">
+                  {new Date(post.published_at).toLocaleDateString('fr-FR', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric'
+                  })}
+                </span>
+              )}
+            </div>
+          </header>
+
+          {/* Article Body */}
+          <div className="article-body prose prose-custom">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} components={{ a: MarkdownLink }}>
+              {post.body_md || post.excerpt || ""}
+            </ReactMarkdown>
+          </div>
+
+          {/* Article Footer */}
+          <footer className="article-footer">
+            <Link href="/blog" className="btn btn-secondary">
+              ← Retour au blog
+            </Link>
+          </footer>
+        </div>
+      </section>
+    </>
   );
 }
